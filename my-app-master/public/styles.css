@@ -1,0 +1,226 @@
+
+
+*
+
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+  }
+  
+  body {
+    
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+   
+
+
+
+    background-color: #6bff4a;
+    background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  }
+  
+  .container {
+    margin: 10% auto;
+    padding: 80px 0;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .container h1 {
+    font-size: 40px;
+    font-weight: 150;
+    font-family: "Montserrat", sans-serif;
+   
+  }
+  
+  form {
+    padding:  0;
+    position:relative;
+  }
+  .inp_class {    /*form input */
+    border: 1px solid rgba(252, 252, 252, 0.4);
+    background-color: rgba(252, 252, 252, 0.2);
+    width: 250px;
+    border-radius: 3px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    
+    
+  }
+
+  ::placeholder{
+    color:white;
+  }
+  
+   .btn_class {    /*login button */
+    appearance: none;
+    outline: 0;
+    background-color: white;
+    border: 0;
+    padding: 10px 15px;
+    color: #9e9e9e;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 18px;
+  }
+  .footer {
+    background-color: white; /* Change background color to white */
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Add fixed positioning */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Align to the left */
+    width: 100%; /* Set width to 100% */
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .navbar{
+    display: flex;
+  }
+
+  .navbar-custom {
+    background-color: white;
+}
+
+option{
+  color: #9e9e9e;
+}
+
+label{
+  color:white;
+  font-size: large;
+  font-weight:500px
+}
+
+/* section{
+  margin: 0;
+padding: 0;
+overflow: hidden;
+z-index: -1;
+}
+marquee{
+      height: 100vh;
+    
+}
+.ball{
+  max-width: 300px;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+} */
+
+
+.loginMsg{
+  color:white;
+  size: 20px;
+}
+/************************************************/
+.matches-container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: '0px';
+}
+
+.plus-button-2{
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  margin-top: 0px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.select-container-2 {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+/* Style for the labels */
+.label-2 {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+/* Style for the select elements */
+.select-input-2 {
+  width: 100px; /* Adjust the width as needed */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+.select-input-2 option {
+  font-family: "Montserrat";
+  color:grey;
+  font-weight: bold;
+
+}
+.team-select-container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: "10px";
+}
+
+.team-select-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+
+
+.select-logo-container-2 {
+  display: flex;
+  align-items: center;
+}
+
+.team-logo-2 {
+  width: 70px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust as needed */
+}
+

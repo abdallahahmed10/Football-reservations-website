@@ -1,0 +1,24 @@
+user_username, match_home_team, match_date_and_time, credit_card_number, pin_number, row_no, column_no
+
+
+# user_username, match_home_team, match_date_and_time, credit_card_number, pin_number, row_no, column_no
+'user1', 'Al Ahly SC', '2023-01-01 18:00:00', '1234567890123456', '1234', '0', '0'
+
+# user_username, match_home_team, match_date_and_time, credit_card_number, pin_number, row_no, column_no
+user1, Al Ahly SC, 2023-01-01 18:00:00, 1234567890123456, 1234, 0, 0
+For Database:
+'user1', 'Al Ahly SC', '2023-01-01 18:00:00', '1234567890123456', '1234', '0', '0'
+
+
+For Controller
+{"user_username":"user1", "match_home_team":"Al Ahly SC", "match_date_and_time":"2024-03-10T17:45:00.000Z","credit_card_number": "1234567890123456", "pin_number":"1234", row_no:"0", "column_no":"0"
+}
+{
+        "user_username": "user3",
+        "match_home_team": "Al Ahly SC",
+        "match_date_and_time": "2024-06-10T17:45:00.000Z",
+        "credit_card_number": "1234567890123456",
+        "pin_number": 1234,
+        "row_no": 0,
+        "column_no": 0
+    }

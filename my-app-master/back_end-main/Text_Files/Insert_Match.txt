@@ -1,0 +1,82 @@
+For Database:
+("Al Ahly SC", "El Zamalek SC", "Cairo International Stadium", "2023-02-01 18:00:00", JSON.stringify({ "A1": true, "A2": false }), 300.00, 800.00, 1, 2, 3)
+
+Al Ahly SC, El Zamalek SC, Cairo International Stadium, 2023-01-01 18:00:00, {"A1": true, "A2": false}, 300.00, 800.00, 1, 2, 3
+
+For Controller:
+{"home_team":"Al Ahly SC", "away_team":"El Zamalek SC", "match_venue":"Cairo International Stadium", "date_and_time":"2023-01-01 18:00:00",  "vip_ticket_price": 800.00,"main_referee_first_name": "Gary","main_referee_middle_name": "Grice","main_referee_last_name": "Grice", "linesmen_1_first_name": "Tyler ","linesmen_1_middle_name": "Gregory","linesmen_1_last_name": "Okonma", "linesmen_2_first_name": "Casey ","linesmen_2_middle_name": "Joseph","linesmen_2_last_name": "Jones"}
+
+{
+    "home_team": "Al Masry SC",
+    "away_team": "Aswan SC",
+    "match_venue": "Cairo International Stadium test",
+    "date_and_time": "2024-03-10T17:45:00.000Z",
+    "vip_ticket_price": 800.00,
+    "main_referee_first_name": "Gary",
+    "main_referee_middle_name": "Grice",
+    "main_referee_last_name": "Grice",
+    "linesmen_1_first_name": "Tyler",
+    "linesmen_1_middle_name": "Gregory",
+    "linesmen_1_last_name": "Okonma",
+    "linesmen_2_first_name": "Casey",
+    "linesmen_2_middle_name": "Joseph",
+    "linesmen_2_last_name": "Jones"
+}
+
+
+{
+        "old_home_team": "Pyramids FC",
+        "old_date_and_time": "2024-03-10T17:45:00.000Z",
+        "home_team": "Al Masry SC",
+        "away_team": "Smouha SC",
+        "match_venue": "30 June Stadium",
+        "date_and_time": "2024-03-10T17:45:00.000Z",
+        "vip_ticket_price": "900.00",
+        "main_referee_first_name": "Gary",
+    "main_referee_middle_name": "Grice",
+    "main_referee_last_name": "Grice",
+    "linesmen_1_first_name": "Tyler ",
+    "linesmen_1_middle_name": "Gregory",
+    "linesmen_1_last_name": "Okonma",
+    "linesmen_2_first_name": "Casey ",
+    "linesmen_2_middle_name": "Joseph",
+    "linesmen_2_last_name": "Jones"
+}
+
+
+
+{
+    "old_home_team": "Pyramids FC",
+    "old_date_and_time": "2024-03-10T15:45:00.000Z",
+    "home_team": "Al Masry SC",
+    "away_team": "Smouha SC",
+    "match_venue": "30 June Stadium",
+    "date_and_time": "2024-03-10T15:45:00.000Z",
+    "vip_ticket_price": "900.00",
+    "main_referee_first_name": "Gary",
+    "main_referee_middle_name": "Grice",
+    "main_referee_last_name": "Grice",
+    "linesmen_1_first_name": "Tyler",
+    "linesmen_1_middle_name": "Gregory",
+    "linesmen_1_last_name": "Okonma",
+    "linesmen_2_first_name": "Casey",
+    "linesmen_2_middle_name": "Joseph",
+    "linesmen_2_last_name": "Jones"
+}
+
+{
+    "home_team": "Al Ahly SC",
+    "away_team": "Smouha SC",
+    "match_venue": "Cairo International Stadium test",
+    "date_and_time": "2024-06-10T17:45:00.000Z",
+    "vip_ticket_price": 800.00,
+    "main_referee_first_name": "Gary",
+    "main_referee_middle_name": "Grice",
+    "main_referee_last_name": "Grice",
+    "linesmen_1_first_name": "Tyler",
+    "linesmen_1_middle_name": "Gregory",
+    "linesmen_1_last_name": "Okonma",
+    "linesmen_2_first_name": "Casey",
+    "linesmen_2_middle_name": "Joseph",
+    "linesmen_2_last_name": "Jones"
+}

@@ -1,0 +1,98 @@
+Update_User_controller By GPT
+Implement the approveUser function:
+import mysql from 'mysql2'
+
+import dotenv from 'dotenv'
+dotenv.config()
+
+const pool = mysql.createPool({
+    host: process.env.MYSQL_HOST, //using environment variables insted of hardcoding 
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.MYSQL_DATABASE
+}).promise()
+
+
+//TODO: Testing
+export async function createUser(username, password, first_name, last_name, birth_date, gender, city, address, email_address) {
+
+    const [result] = await pool.query(`
+    INSERT INTO users (username, password, first_name, last_name, birth_date, gender, city, address, email_address)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `, [username, password, first_name, last_name, birth_date, gender, city, address, email_address])
+    //the return is an array where 1st element (which wes= set to result) is an object with many properties
+    //one of them is affected rows and another is the ID/primary key of row we added
+    const username = result.insertId
+    //IMPORTNAT: Unfortunately insert doesnt return the created object
+    //so iss standard to use primary key returned by INSERT call to query the object we just added and then return it
+    return getUser(username)
+}
+
+export async function getUser(username) {
+    const [rows] = await pool.query(`
+    SELECT * 
+    FROM users
+    WHERE username = ?
+    `, [username])
+    return rows[0]
+}
+
+
+export async function getPendingUsers() {
+    const [rows] = await pool.query(`
+    SELECT * 
+    FROM users
+    WHERE Approval IS NULL;
+    `)
+    return rows
+
+}
+
+export async function updateUser(username, password, first_name, last_name, birth_date, gender, city, address, email_address) {
+
+    //TODO: implement this function
+    const [result] = await pool.query(`
+        UPDATE users
+        SET 
+            password = ?,
+            first_name = ?,
+            last_name = ?,
+            birth_date = ?,
+            gender = ?,
+            city = ?,
+            address = ?,
+            email_address = ?
+        WHERE username = ?
+    `, [password, first_name, last_name, birth_date, gender, city, address, email_address, username]);
+    return result;
+    //TODO: handle in controller if no rows were affected
+
+    // Check the affected rows to determine if the update was successful
+    if (result.affectedRows > 0) {
+        // If affectedRows is greater than 0, the update was successful
+        //returning updated object
+        return getUser(username);
+    } else {
+        // If affectedRows is 0, it means no rows were updated (user not found)
+        return null;
+    }
+}
+
+export async function approveUser(username) {
+
+    //TODO: this function should update the bool approval column to be true/1 in the row with username = username
+}
+
+
+export async function deleteUser(username) {
+
+    const [result] = await pool.query(`
+        DELETE FROM users
+        WHERE username = ?
+    `, [username]);
+
+    return result;
+    //TODO: handle in controller if no rows were affected
+
+
+}

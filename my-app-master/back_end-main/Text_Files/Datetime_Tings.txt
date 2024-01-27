@@ -1,0 +1,13 @@
+How Datetime is returned by SQL: 
+Date_and_Time: 2023-01-01T16:00:00.000Z
+For some reason the datetime returned by SQL is UTC datetime object
+
+How Date should be sent to SQL (as a string 3ady) :
+2023-01-01
+
+How DateTime should be sent to SQL (as a string 3ady) :
+2024-02-05 16:15:00
+
+Option1: get datetime as UTC object, convert given datetime to a string (I'll need to add 2 hours first), return datetime queried as UTC 3ady
+Option2: get datetime as a string, send it 3ady, when returning (law homa 3ayzen UTC we wont do anything) add 2 hours to the UTC then turn it to a string and return the string
+

@@ -1,0 +1,6 @@
+//Signup func
+//Method: POST (to secure data)
+//Route: https:sssss,localhost:8080/v1/users/signup
+//Input From Front-end: A JSON object in the bod with the values needed to create a user
+//Output To Front-end If success: code201 and the user row that was just created
+//Output T Front-end If fail: TODO:

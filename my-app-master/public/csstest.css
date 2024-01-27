@@ -1,0 +1,75 @@
+/* CSS File or Inline Styles */
+.matches-container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: '0px';
+}
+
+.plus-button-2{
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  margin-top: 0px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.select-container-2 {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+/* Style for the labels */
+.label-2 {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+/* Style for the select elements */
+.select-input-2 {
+  width: 100%; /* Adjust the width as needed */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+.select-input-2 option {
+  font-family: "Montserrat";
+  color:grey;
+  font-weight: bold;
+
+}
+.team-select-container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: "10px";
+}
+
+.team-select-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+
+
+.select-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.team-logo {
+  width: 70px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust as needed */
+}

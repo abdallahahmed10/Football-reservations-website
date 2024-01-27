@@ -1,0 +1,44 @@
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+
+ .container-design{
+  margin-top: 2rem;
+ }
+
+  .match-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-logo {
+    width: 60px; 
+    height: auto;
+    margin-bottom: 8px;
+  }
+  
+  .team-name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .match-details {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .match-time {
+    margin-top: 8px;
+    font-style: italic;
+  }

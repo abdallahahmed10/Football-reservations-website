@@ -1,0 +1,4 @@
+UPDATE `egyptian_premier_league`.`teams` SET `team_logo_path` = 'https://e7.pngegg.com/pngimages/474/784/png-clipart-al-masry-sc-egyptian-premier-league-tala-ea-el-gaish-sc-al-masry-club-stadium-smouha-sc-football.png' WHERE (`team_name` = 'Al Masry SC');
+UPDATE `egyptian_premier_league`.`teams` SET `team_logo_path` = 'https://upload.wikimedia.org/wikipedia/en/7/71/Al-Ittihad_Alexandria_Club_logo.png' WHERE (`team_name` = 'Al Ittihad Alexandria Club');
+UPDATE `egyptian_premier_league`.`teams` SET `team_logo_path` = 'https://e7.pngegg.com/pngimages/268/280/png-clipart-zamalek-sc-al-ahly-sc-egyptian-premier-league-al-masry-sc-football-sport-logo.png' WHERE (`team_name` = 'El Zamalek SC');
+UPDATE `egyptian_premier_league`.`teams` SET `team_logo_path` = 'https://e7.pngegg.com/pngimages/329/797/png-clipart-ismaily-sc-ismailia-al-ahly-sc-al-masry-sc-egyptian-premier-league-football-sport-egypt.png' WHERE (`team_name` = 'Ismaily SC');
